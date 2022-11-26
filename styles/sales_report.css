@@ -1,0 +1,69 @@
+.marginValues {
+    margin-top: 0px !important;
+}
+
+.item {
+    float: left !important;
+}
+
+head {
+    text-align: center;
+}
+
+.print_header_section {
+    display: block !important;
+}
+
+.print_bottom_section {
+    display: block !important;
+}
+
+.text {
+    text-transform: capitalize !important
+}
+
+.kot-modal-bg {
+    background-color: lightgray;
+}
+
+.print {
+    font-family: monospace;
+    text-align: center !important;
+}
+
+.kot-print {
+    font-family: monospace;
+    text-align: center !important;
+}
+
+.header {
+    font-weight: bold;
+    border-bottom: thin dotted;
+    border-top: thin solid;
+}
+
+.total {
+    border-top: thin dotted;
+}
+
+.header th {
+    height: 28px;
+    text-align: left;
+}
+
+.table td,
+.table th {
+    text-align: left;
+}
+
+.print-table {
+    text-transform: capitalize !important;
+    margin-top: 10px !important;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.print-table td+td,
+.header th+th {
+    text-align: right;
+}

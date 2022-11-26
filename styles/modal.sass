@@ -1,0 +1,213 @@
+.overlay 
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.c-modal 
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  overflow: hidden
+  z-index: 1000
+
+.c-modal-wrapper 
+  position: relative
+  top: 100px
+  margin: auto
+  max-width: 700px
+  border-radius: 5px
+  box-sizing: border-box
+  transition-property: top, opacity
+  transition-duration: .25s
+  transition-timing-function: ease-in-out
+  overflow: hidden
+
+.c-modal-header__title 
+  font-size: 1.16666667em
+  float: left
+  font-weight: 700
+
+.c-modal-footer,
+.c-modal-header 
+  padding: 0px 25px 0px 30px
+  min-height: 80px
+  line-height: 80px
+
+.c-modal-header 
+  border-bottom-width: 1px
+  border-bottom-style: solid
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+
+.c-modal-footer 
+  border-top-width: 1px
+  border-top-style: solid
+  border-bottom-right-radius: 5px
+  border-bottom-left-radius: 5px
+
+.c-modal__close 
+  cursor: pointer
+  position: relative
+  width: 25px
+  height: 25px
+  display: inline-block
+  vertical-align: middle
+
+.c-modal__close:after,
+.c-modal__close:before 
+  content: ""
+  position: absolute
+  left: 12px
+  width: 1px
+  height: 30px
+
+.c-modal__close:after 
+  transform: rotate(45deg)
+
+.c-modal__close:before 
+  transform: rotate(-45deg)
+
+.c-modal-footer .btn
+  margin-right: 0
+
+.c-modal-fullscreen 
+  width: auto
+  max-width: 100%
+  top: 30px
+  border-radius: 0
+
+.c-modal-fullscreen .c-modal-content 
+  max-height: calc(100vh - 192px)
+  overflow-x: hidden
+  overflow-y: auto
+  &::-webkit-scrollbar
+    background-color: transparent
+    border-radius: 3px
+    width: 6px
+  &::-webkit-scrollbar-thumb
+    background-color: #c9c9c9
+    border-radius: 4px
+
+.c-modal-fullscreen .c-modal-wrapper 
+  border-radius: none
+
+.c-modal-fullscreen__align-table
+  display: table
+  height: 100%
+  margin: auto
+  width: 100%
+
+.c-modal-fullscreen__align-row
+  display: table-row
+
+.c-modal-fullscreen__align-cell 
+  display: table-cell
+  vertical-align: middle
+
+.c-modal-fullscreen_c-modal-content 
+  height: calc(100vh - 212px)
+  background-color: white
+
+.c-modal-fullscreen__content,
+.c-modal-fullscreen__container 
+  height: 100%
+
+.c-modal-header__title-text 
+  line-height: 1.2em
+  display: inline-block
+  vertical-align: middle
+  color: #6a6a67
+
+.c-modal-fullscreen__container 
+  position: relative
+
+// .c-modal-fullscreen__control-container
+//   position: absolute
+//   bottom: 0
+//   width: 100%
+//   text-align: center
+//   padding-top: 15px
+
+.c-modal-fullscreen__control 
+  position: absolute
+  bottom: 15px
+  width: 132px
+  left: 50%
+  margin-left: -66px
+  display: block
+  padding: 10px 5px
+  border-width: 1px
+  border-style: solid
+  border-radius: 20px
+  opacity: 1
+  transition-property: opacity, margin
+  transition-duration: .25s
+
+
+.c-modal-fullscreen__content:hover+.c-modal-fullscreen__control-container .c-modal-fullscreen__control
+  opacity: 0
+  margin-bottom: 7px
+
+.c-modal-fullscreen__control-item 
+  float: left
+  margin: 0 10px
+  height: 20px
+  width: 20px  
+  background-size: auto 100%
+  background-repeat: no-repeat
+  cursor: pointer
+
+.c-modal-fullscreen__control-item_plus 
+  background-position: -40px 0
+
+.c-modal-fullscreen__control-item_fit 
+  background-position: -20px 0
+
+.c-modal-fullscreen__content.scroll-wrapper .scroll-element .scroll-bar,
+.report-table-container.scroll-wrapper .scroll-element .scroll-bar 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+  filter: alpha(opacity=70)
+  opacity: 0.7
+
+.popup-product-edit .c-modal-content 
+  max-height: calc(100vh - 192px)
+
+.c-modal-footer,
+.c-modal-header
+  border-color: #dee8d6
+
+.c-modal-fullscreen__control
+  border-color: #dee8d6
+  background-color: #dee8d6
+
+.c-modal-wrapper,
+.c-modal-header,
+.c-modal-content
+  background-color: white
+
+.c-modal-header__title
+  color: #e8e8e7
+
+.c-modal__close:after,
+.c-modal__close:before
+  background-color: #0d0d0d
+
+.c-modal-footer
+  background-color: #e8e8e7
+  .btn-cancel
+    background-color: #fff
+
+.c-modal-header
+  box-shadow: 0 7px 7px rgba(242, 242, 242, .11)
+
+.c-modal-wrapper
+  box-shadow: 0px 2px 18px 0px #66715e
+
+.c-modal-fullscreen__control
+  box-shadow: 0 5px 19px 0 #e8e8e8  

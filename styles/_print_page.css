@@ -1,0 +1,29 @@
+
+.info-title {        
+    color: black !important;    
+    font-weight: bold !important;
+}
+
+.report-table__cell, .table__sort-link, .input__clarification, .toggle__text, .breadcrumbs-link:last-child {
+	color: black !important;
+	font-size: 14px;
+}
+
+
+.info-container > div  {
+	font-size: 14px;
+}
+
+/*.card__col-xs-4 {
+	float: none;
+    display: inline-block;
+    vertical-align: top;
+}*/
+
+.card__col-xs-4 {
+    width: 30% !important;
+}
+
+.card__col-xs-8  {
+	width: 62% !important;	
+}
